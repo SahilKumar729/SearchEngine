@@ -50,7 +50,7 @@ Managing and analyzing large volumes of textual data is a common challenge acros
 1. Clone the repository to your local machine:
 
     ```
-    git clone 
+    git clone https://github.com/SahilKumar729/SearchEngine.git
     ```
 
 2. Navigate to the project directory:
