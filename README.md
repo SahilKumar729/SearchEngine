@@ -50,7 +50,7 @@ Managing and analyzing large volumes of textual data is a common challenge acros
 1. Clone the repository to your local machine:
 
     ```
-    git clone https://github.com/yourusername/combined-csv-processor-tfidf-search.git
+    git clone 
     ```
 
 2. Navigate to the project directory:
