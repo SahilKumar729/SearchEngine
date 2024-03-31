@@ -55,12 +55,6 @@ class MRCombinedCSVProcessor(MRJob):
 
 
     def mapper_tf(self, _,whole_word):
-        # for key,value in self.whole_file.items():
-        #     words=value.split()
-        #     first_word=whole_word[0]
-        #     yield None,words.count(first_word)
-
-     
         for key,value in self.whole_file.items():
             words=value.split()
             local_tf = [0] * len(whole_word)
@@ -70,7 +64,6 @@ class MRCombinedCSVProcessor(MRJob):
             self.whole_tf.append(local_tf)
             yield None,whole_word
 
-            #yield word,words.count(word)
   
     
     def mapper_idf(self, _, whole):
@@ -97,7 +90,7 @@ class MRCombinedCSVProcessor(MRJob):
          
    
     def mapper_query(self,idf,tfidf):
-        with open('/home/sahil/Documents/hello/query.txt', 'r') as f:
+        with open('/home/sahil/Documents/Search_Engine/query.txt', 'r') as f:
             query = f.readline().strip()
 
 
@@ -137,9 +130,9 @@ class MRCombinedCSVProcessor(MRJob):
         return [
             MRStep(mapper=self.mapper_first, reducer=self.reducer_first),
             MRStep(mapper=self.mapper_tf),
-            MRStep(mapper=self.mapper_idf)#, reducer=self.reducer_idf)
-            ,MRStep(reducer=self.reducer_tf_idf)
-            ,MRStep(mapper=self.mapper_query)#,reducer=self.reducer_query)
+            MRStep(mapper=self.mapper_idf),
+            MRStep(reducer=self.reducer_tf_idf),
+            MRStep(mapper=self.mapper_query)
         ]
     
 
