@@ -69,12 +69,12 @@ Managing and analyzing large volumes of textual data is a common challenge acros
 
 1. **Data Cleaning**:
     ```
-    python data_cleaning.py Data.csv
+    python DataCleaningCode.py
     ```
 
 2. **TF-IDF Search Engine**:
     ```
-    python tfidf_search.py CleanedData.csv
+    python SearchEngineCode.py CleanedData.csv
     ```
 
 ## Dependencies
