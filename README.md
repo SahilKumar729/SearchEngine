@@ -79,13 +79,12 @@ Managing and analyzing large volumes of textual data is a common challenge acros
     ```
 
 # Instructions (Execution):
-Execute Data Cleaning Script DataCleaningCode.py file to clean the data.
-Provide Query Text: Write your query in the query.txt file.
-Execute Search Engine Script: Run the SearchEngineCode.py file.
-Query Processing: The search engine will process the query to identify relevant terms and calculate their TF-IDF scores.
-Document Ranking: Based on the TF-IDF scores, the search engine will rank the documents in the dataset according to their similarity to the query.
-Result Presentation:
-The search engine will provide the result, presenting the most similar documents based on the query.
+-**Execute Data Cleaning Script**: Run DataCleaningCode.py file to clean the data.
+-**Provide Query Text**: Write your query in the query.txt file.
+-**Execute Search Engine Script**: Run the SearchEngineCode.py file.
+-**Query Processing**: The search engine will process the query to identify relevant terms and calculate their TF-IDF scores.
+-**Document Ranking**: Based on the TF-IDF scores, the search engine will rank the documents in the dataset according to their similarity to the query.
+-**Result Presentation**: The search engine will provide the result, presenting the most similar documents based on the query.
 
 ## Dependencies
 
