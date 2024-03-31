@@ -25,14 +25,14 @@ Managing and analyzing large volumes of textual data is a common challenge acros
 ## Usage
 
 1. **Data Cleaning**:
-    - Run the provided Python script `data_cleaning.py`.
+    - Run the provided Python script `DataCleaningCode.py`.
     - Ensure that you have the necessary libraries installed (e.g., pandas, dask).
     - Specify the input CSV file containing data to be cleaned.
     - The script reads the CSV file, drops specified columns, and preprocesses text data (lowercase, remove punctuation).
     - The cleaned data is saved to a new CSV file.
 
 2. **TF-IDF Search Engine**:
-    - Execute the Python script `tfidf_search.py`.
+    - Execute the Python script `SearchEngineCode.py`.
     - Make sure the required dependencies are installed (e.g., mrjob).
     - The search engine processes the preprocessed CSV file.
     - It calculates TF-IDF scores for each document and term.
@@ -79,9 +79,9 @@ Managing and analyzing large volumes of textual data is a common challenge acros
     ```
 
 # Instructions (Execution):
--  **Execute Data Cleaning Script**: Run DataCleaningCode.py file to clean the data.
--  **Provide Query Text**: Write your query in the query.txt file.
--  **Execute Search Engine Script**: Run the SearchEngineCode.py file.
+-  **Execute Data Cleaning Script**: Run `DataCleaningCode.py` file to clean the data.
+-  **Provide Query Text**: Write your query in the `query.txt` file.
+-  **Execute Search Engine Script**: Run the `SearchEngineCode.py` file.
 -  **Query Processing**: The search engine will process the query to identify relevant terms and calculate their TF-IDF scores.
 -  **Document Ranking**: Based on the TF-IDF scores, the search engine will rank the documents in the dataset according to their similarity to the query.
 -  **Result Presentation**: The search engine will provide the result, presenting the most similar documents based on the query.
