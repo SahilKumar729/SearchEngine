@@ -1,7 +1,7 @@
 # Contribution
 This project exists thanks to the extraordinary people who contributed to it.
-Muhammad Daniyal Haider (i222042@nu.edu.pk)
-Muhammad Anas Khan (i221987@nu.edu.pk)
+-  Muhammad Daniyal Haider (i222042@nu.edu.pk)
+-  Muhammad Anas Khan (i221987@nu.edu.pk)
 
 
 # Combined CSV Processor and TF-IDF Search Engine
